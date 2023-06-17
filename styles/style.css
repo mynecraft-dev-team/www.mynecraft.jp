@@ -16,6 +16,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 20px;
+    box-shadow: 0 1px 5px rgb(44, 44, 44);
 }
 
 .header-title a{
@@ -35,7 +36,7 @@ header {
     display: block;
     text-decoration: none;
     color: #b3b3b3;
-    transition: all 0.5s;
+    transition: all 0.3s;
     padding: 15px;
 }
 
@@ -50,8 +51,26 @@ header {
 }
 
 .main-top h3 {
-    font-size: 50px;
+    font-size: 4rem;
     margin: 0px;
+}
+
+.typewriter{
+    border-right: 0.07em solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(11, end) forwards, cursol 1s step-end infinite;
+}
+
+@keyframes typing{
+    0% { width: 0%; }
+    100% { width: 11em;}
+}
+
+@keyframes cursol{
+    0%{ border-color: transparent; }
+    50%{ border-color: black; } 
+    100%{ border-color: transparent; }
 }
 
 .inner {
@@ -65,6 +84,7 @@ header {
     padding: 5px 25px;
     background-color: #ffffff;
     border: #b3b3b3 solid 2px;
+    box-shadow: 0 0 1px #2e2e2e;
 }
 
 .in-card h2 {
@@ -73,5 +93,49 @@ header {
 }
 
 footer {
+    display: flex;
+    color: #f1f1f1;
     background-color: #2e2e2e;
+    height: 180px;
+    padding: 15px 15%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-box {
+    width: 250px;
+}
+
+.footer-text {
+    padding: 5px;
+    border-left: #f1f1f1 solid 3px;
+    border-bottom: #f1f1f1 solid 3px;
+}
+
+.footer-link ul{
+    list-style: none;
+    padding: 2px;
+}
+
+.footer-link ul li {
+    display: block;
+    border-bottom: #f1f1f1 solid 2px;
+}
+
+.footer-link ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    text-align: center;
 }
