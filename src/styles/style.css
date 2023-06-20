@@ -1,10 +1,12 @@
-html body {
+html, body{
     margin: 0px;
     padding: 0px;
+    height: 100vh;
 }
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100%;
 }
 
 header {
@@ -44,6 +46,10 @@ header {
     color: #f1f1f1;
 }
 
+main {
+    min-height: 100%;
+}
+
 .main-top {
     height: 150px;
     margin: 0 15%;
@@ -51,7 +57,7 @@ header {
 }
 
 .main-top h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0px;
 }
 
@@ -75,7 +81,7 @@ header {
 
 .inner {
     background-color: #f1f1f1;
-    height: 510px;
+    min-height: 100%;
     padding: 15px 15%;
 }
 
@@ -89,7 +95,7 @@ header {
 
 .in-card h2 {
     border-bottom: #2e2e2e solid 3px;
-    width: 200px;
+    width: 45%;
 }
 
 footer {
