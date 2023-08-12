@@ -1,7 +1,8 @@
 {
   "name": "www.mynecraft.jp",
   "version": "0.1.0",
-  "private": true,
+  "author": "mynecraft",
+  "description": "This is mynecraft's homepage",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -25,5 +26,13 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.37.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mynecraft-dev-team/www.mynecraft.jp.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mynecraft-dev-team/www.mynecraft.jp/issues"
   }
 }
