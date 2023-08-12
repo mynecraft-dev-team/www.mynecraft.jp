@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Mynecraft',
-  description: 'あいうえお',
+  description: '好きなことを、楽しく',
 };
 
 export default function RootLayout({
