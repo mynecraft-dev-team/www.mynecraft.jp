@@ -1,4 +1,4 @@
 # よくわからないけど彼らがよく監視するんだ...
 User-agent : *
 Allow: /*
-Sitemap: https://www.mynecraft.jp/sitemap.xml
+# Sitemap: https://www.mynecraft.jp/sitemap.xml

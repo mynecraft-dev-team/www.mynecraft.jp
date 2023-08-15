@@ -1,28 +1,51 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
 
-export default function header() {
-    let isOpen = false;
+interface HeaderProps {}
 
-    function handleOpen(): void {
-        isOpen = !isOpen;
-    }
+const Header: React.FC<HeaderProps> = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-        <>
-            <header className="bg-black text-white ">
-                <button
-                    className="p-1"
-                >
-                    ≡
-                </button>
-                <span className="text-2xl mx-auto">Mynecraft</span>
-            </header>
-            <nav className="invisible">
-                <ul>
-                    <li><a href="https://www.mynecraft.jp/">Home</a></li>
-                    <li><a href="https://www.mynecraft.jp/announce">Announce</a></li>
-                </ul>
-            </nav>
-        </>
-    )
-}
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <>
+      <header className="bg-white border-solid border-2 h-12 flex justify-around items-center">
+        <Link href="/">
+          <span className="text-2xl">Mynecraft</span>
+        </Link>
+        <button onClick={handleClick}>≡</button>
+      </header>
+      {isOpen && (
+        <nav className="ease-out">
+          <button onClick={handleClick}>X</button>
+          <ul>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/work">Work</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <Link href="/posts/announce">Announce</Link>
+            </li>
+            <li>
+              <Link href="/posts/blog">Blog</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+      )}
+    </>
+  );
+};
+
+export default Header;
