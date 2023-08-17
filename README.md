@@ -11,6 +11,10 @@
 - Next.js
   など
 
+## 起動方法
+
+開発は`npm i`してから`npm run dev`
+
 ## デバックについて
 
 VScode を使用したら`.vscode/launch.json`に以下のファイルを追加することでデバックしやすいです。
