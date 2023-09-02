@@ -1,8 +1,4 @@
-type Props = {
-  title: String;
-};
-
-export default function NonFrameCard(props: Props) {
+export default function NonFrameCard(props: { title: String }) {
   return (
     <div className="card">
       <div className="card-body">

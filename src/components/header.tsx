@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = () => {
               <Link href="/news">News</Link>
             </li>
             <li>
-              <Link href="/Create">Create</Link>
+              <Link href="/create">Create</Link>
             </li>
             <li>
               <Link href="/blog">Blog</Link>

@@ -1,13 +1,11 @@
 import Link from "next/link";
 import { UrlObject } from "url";
 
-type Props = {
+export default function newsList(props: {
   title: String;
   date: String;
   url: UrlObject;
-};
-
-export default function newsList(props: Props) {
+}) {
   return (
     <Link href={props.url}>
       <div className="card">
